@@ -17,6 +17,9 @@ Security systems: The model can be integrated into security systems to different
 
 E-commerce platforms: Online stores specializing in pet products can use the model to automatically categorize pet images shared by customers. This can improve search functionality, personalize product recommendations, and enhance the overall shopping experience.
 
+#Train Model#
+Dogs_vs_Cats_colab.ipynb
+
 
 #Image Source#
 
@@ -24,11 +27,8 @@ https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B91
 
 Zip folders
 
-Oral_exam\unseen_data
-Oral_exam\train.zip
-Oral_exam\test.zip
-Oral_exam\MyDog.zip
-
+Oral_exam\Dataset\PetImages\train.zip
+Oral_exam\Dataset\PetImages\test.zip
 
 upload to colab
 Oral_exam\model\my_model20230609172115.h5 to colab
@@ -39,4 +39,4 @@ Oral_exam\MyDog.zip
 
 #model load#
 
-To use new Model in Validation update load_model function.
+To use new Model in Validation update load_model function in mode_validation_colab.ipynb, Model saved under C:\ZHAW\Machine Learning 2\Oral_exam\finetune or C:\ZHAW\Machine Learning 2\Oral_exam\model.
