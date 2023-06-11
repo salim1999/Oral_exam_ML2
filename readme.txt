@@ -22,33 +22,21 @@ E-commerce platforms: Online stores specializing in pet products can use the mod
 
 https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip
 
+Zip folders
 
-#Image standarzation#
+Oral_exam\unseen_data
+Oral_exam\train.zip
+Oral_exam\test.zip
+Oral_exam\MyDog.zip
 
-Images get standardized to (192,192,3)
 
-from PIL import Image
-import os
+upload to colab
+Oral_exam\model\my_model20230609172115.h5 to colab
+Oral_exam\unseen_data.zip
+Oral_exam\train.zip
+Oral_exam\test.zip
+Oral_exam\MyDog.zip
 
-# Set the target size
-target_size = (192, 192, 3)
+#model load#
 
-# Set the path to the folder containing the images
-folder_path = 'Dataset/PetImages/train/cat'
-
-# Loop through all images in the folder
-for filename in os.listdir(folder_path):
-    if filename.endswith('.jpg'):  # Update with the file extensions you have
-        # Load the image
-        image_path = os.path.join(folder_path, filename)
-        image = Image.open(image_path)
-        
-        # Resize the image
-        resized_image = image.resize(target_size[:2])
-        
-        # Convert the image to RGB if it's not already
-        if resized_image.mode != 'RGB':
-            resized_image = resized_image.convert('RGB')
-        
-        # Save the resized image, overwriting the original
-        resized_image.save(image_path)
+To use new Model in Validation update load_model function.
